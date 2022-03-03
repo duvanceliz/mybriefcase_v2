@@ -1,16 +1,32 @@
 #header{
     font-size: 1em;
     background: rgb(5,0,97);
-background: linear-gradient(120deg, rgba(5,0,97,1) 0%, rgba(98,3,166,1) 35%, rgba(46,0,194,1) 100%); 
+background: linear-gradient(120deg, rgba(5,0,97,1) 0%, rgba(98,3,166,1) 35%, rgba(46,0,194,1) 100%);
     min-height: 37.5em;
 }
 .logo{
     margin-left: .4em;
-    display: inline;
+    
     font-size: 2em;
     color: rgb(255, 255, 255);
-    
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+
+@keyframes logo {
+
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+
+}
+
+
 .navbar a{
     font-size: 1.25em;
     text-decoration: none;
@@ -21,13 +37,13 @@ background: linear-gradient(120deg, rgba(5,0,97,1) 0%, rgba(98,3,166,1) 35%, rgb
 
 }
 
-i{
-   
+#logotipo{
+
     font-size: 2em;
     color: rgb(255, 255, 255);
 }
 #footer{
-    
+
     background: linear-gradient(90deg, rgba(5,0,97,1) 0%, rgba(98,3,166,1) 35%, rgba(46,0,194,1) 100%);
 }
 
@@ -51,7 +67,7 @@ i{
     100%{
         transform: translateX(200px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 
 .python{
@@ -70,7 +86,7 @@ i{
     100%{
         transform: translateY(-100px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 
 .javas{
@@ -79,7 +95,7 @@ i{
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
-    
+
 }
 
 @keyframes javas {
@@ -90,7 +106,7 @@ i{
     100%{
         transform: translateY(200px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 .type{
     animation-name: type;
@@ -108,7 +124,7 @@ i{
     100%{
         transform: translateX(-200px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 
 .angular{
@@ -127,7 +143,7 @@ i{
     100%{
         transform: translateX(-300px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 
 .spring{
@@ -146,7 +162,7 @@ i{
     100%{
         transform: translateX(300px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 
 .flask{
@@ -155,7 +171,7 @@ i{
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in-out;
-    
+
 }
 
 @keyframes flask {
@@ -166,7 +182,7 @@ i{
     100%{
         transform: translateY(-200px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 .mysql{
     animation-name: mysql;
@@ -184,7 +200,7 @@ i{
     100%{
         transform: translateX(-200px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 .boot{
     animation-name: boot;
@@ -202,7 +218,7 @@ i{
     100%{
         transform: translateX(-200px) rotateX(360deg) rotate(360deg);
     }
-    
+
 }
 
 .aws{
@@ -221,5 +237,30 @@ i{
     100%{
         transform: translateY(100px) rotateX(360deg) rotate(360deg);
     }
+
+}
+
+#main-row1{
     
+    background: rgb(255, 255, 255);
+}
+
+#main-row2{
+
+    background: rgb(80, 0, 172);  
+}
+#main-row3{
+    background: rgb(255, 255, 255);
+}
+
+#main-row4{
+
+    background: rgb(80, 0, 172);   
+}
+
+#main-row5{
+    background: rgb(255, 255, 255);
+}
+i{
+    font-size: 2em;
 }
