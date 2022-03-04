@@ -1,125 +1,189 @@
 <div class="container-fluid" id="header">
-     <div class="container">
-         <div class="row p-3">
+    <div class="container">
+        <div class="row p-3" id="device-lg">
 
-            <div class="col-lg-5 d-flex">
+            <div class="col-md-5 d-flex">
+                <i class="bi bi-file-earmark-code" id="logotipo"></i>
+                <div class="logo">DUVANCELIZ</div>
+
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="navbar">
+                    <a href="#header">INICIO</a>
+                    <a href="#main-row1">PROYECTOS</a>
+                    <a href="#main-row4">SOBRE MI</a>
+                    <a href="#main-row5">CONTACTO</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div id="device-sm">
+
+            <div class="container-log d-flex">
                 <i class="bi bi-file-earmark-code" id="logotipo"></i>
                 <div class="logo">DUVANCELIZ</div>
             </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <div class="navbar">
-                    <a href="#">HOME</a>
-                    <a href="#">PROYECTS</a>
-                    <a href="#">ABOUT ME</a>
-                    <a href="#">CONTACT</a>
-                   </div>
+
+            <div class="hamburger">
+                <div id="hamburger">
+                    <button (click)="onClick()">
+                        <span class="top-line"></span>
+                        <span class="middle-line"></span>
+                        <span class="bottom-line"></span>
+                    </button>
+                </div>
+
+
             </div>
-         </div>
-     </div>
-    
-    <div class="container text-light mt-5">
-        <div class="row p-5">
-            <div class="col-lg-6">
-                <h5 class="fs-2">Developer web fullstack enthusiastic and passionate</h5>
-      <p>Hi, I'am Duvan. nice to meet you Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum voluptatum dolor laudantium dicta eius eligendi ut maxime mollitia nobis. Repellat eaque ut, temporibus debitis sequi iste maxime repellendus.</p>
-      <a href="" class="btn btn-primary">GET STARTED</a>
-            </div>
-            <div class="col-lg-6 text-center">
-                <div class="java">JAVA</div>
-                <div class="python">PYTHON</div>
-                <div class="javas">JAVASCRIPT</div>
-                <div class="type">TYPESCRIPT</div>
-                <div class="angular">ANGULAR</div>
-                <div class="spring">SPRING BOOT</div>
-                <div class="flask">FLASK</div>
-                <div class="mysql">MYSQL</div>
-                <div class="boot">BOOTSTRAP 5</div>
-                <div class="aws">AWS</div>
-            </div>
+
         </div>
-      
+
+        <nav>
+            <a href="#header">INICIO</a>
+            <a href="#main-row1">PROYECTOS</a>
+            <a href="#main-row4">SOBRE ME</a>
+            <a href="#main-row5">CONTACTO</a>
+
+        </nav>
+
+
     </div>
 
-   
+    <div class="container text-light mt-5">
+        <div class="row p-3">
+            <div class="col-lg-6">
+                <h5 class="fs-2">Desarrolador web fullstack entusiasta y apasionado</h5>
+                <p class="p-header">Hola, Me llamo duvan. Encantado de conocerte soy desarrollador de aplicaciones web fullstack, me encanta lo que hago y soy muy creativo, siempre estoy a la vanguardia de las nuevas tecnología e innovando cada día.
+                </p>
+                <a href="https://github.com/duvanceliz" target="_blank" class="btn-header">Empezar</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="items">
+                    <div class="java">JAVA</div>
+                    <div class="python">PYTHON</div>
+                    <div class="javas">JAVASCRIPT</div>
+                    <div class="type">TYPESCRIPT</div>
+                    <div class="angular">ANGULAR</div>
+                    <div class="spring">SPRING BOOT</div>
+                    <div class="flask">FLASK</div>
+                    <div class="mysql">MYSQL</div>
+                    <div class="boot">BOOTSTRAP 5</div>
+                    <div class="aws">AWS</div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
 </div>
 
 <div class="container-fluid" id="main">
 
-    <div class="row" id="main-row1">
-        <h3 class="text-center">PROYECTS</h3>
+    <div class="row p-4" id="main-row1">
+        <h3 class="text-center">PROYECTOS</h3>
         <div class="col-lg-6">
-           
+
+
         </div>
         <div class="col-lg-6 p-2">
 
             <h5 class="fs-2">Developer web fullstack enthusiastic and passionate</h5>
-            <p >Hi, I'am Duvan. nice to meet you Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum voluptatum dolor laudantium dicta eius eligendi ut maxime mollitia nobis. Repellat eaque ut, temporibus debitis sequi iste maxime repellendus.</p>
-            <a href="" class="btn btn-primary">GET STARTED</a>
-              
+            <p>Hi, I'am Duvan. nice to meet you Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum voluptatum dolor laudantium dicta eius eligendi ut maxime mollitia nobis. Repellat eaque ut, temporibus debitis sequi iste maxime repellendus.</p>
+            <a href="https://github.com/duvanceliz" target="_blank" class="btn-link">Ver proyecto</a>
+
         </div>
     </div>
     <div class="row p-4" id="main-row2">
         <div class="col-lg-6">
 
-            <h5 class="fs-2 text-light">Developer web fullstack enthusiastic and passionate</h5>
-            <p class="text-light">Hi, I'am Duvan. nice to meet you Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum voluptatum dolor laudantium dicta eius eligendi ut maxime mollitia nobis. Repellat eaque ut, temporibus debitis sequi iste maxime repellendus.</p>
-            <a href="" class="btn btn-primary">GET STARTED</a>
-           
+            <h5 class="fs-2">Developer web fullstack enthusiastic and passionate</h5>
+            <p>Hi, I'am Duvan. nice to meet you Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum voluptatum dolor laudantium dicta eius eligendi ut maxime mollitia nobis. Repellat eaque ut, temporibus debitis sequi iste maxime repellendus.</p>
+            <a href="https://github.com/duvanceliz" target="_blank" class="btn-link">Ver proyecto</a>
+
         </div>
         <div class="col-lg-6">
 
-              
+
+
         </div>
 
     </div>
-    <div class="row" id="main-row3">
-        <div class="col-lg-6">
+    <div class="row p-4" id="main-row3">
+        <div class="col-lg-6 ">
 
-           
+
         </div>
         <div class="col-lg-6">
 
             <h5 class="fs-2">Developer web fullstack enthusiastic and passionate</h5>
-            <p >Hi, I'am Duvan. nice to meet you Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum voluptatum dolor laudantium dicta eius eligendi ut maxime mollitia nobis. Repellat eaque ut, temporibus debitis sequi iste maxime repellendus.</p>
-            <a href="" class="btn btn-primary">GET STARTED</a>
-              
+            <p>Hi, I'am Duvan. nice to meet you Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum voluptatum dolor laudantium dicta eius eligendi ut maxime mollitia nobis. Repellat eaque ut, temporibus debitis sequi iste maxime repellendus.</p>
+            <a href="https://github.com/duvanceliz" target="_blank" class="btn-link">Ver proyecto</a>
+
+
+
+
         </div>
 
     </div>
 
     <div class="row p-4" id="main-row4">
-       
+
         <div class="col-lg-3"></div>
-        <div class="col-lg-6"> 
+        <div class="col-lg-6">
             <div class="text-center">
                 <img src="assets/perfil.png" class="rounded-circle" alt="...">
-              </div>
-            <h5 class="fs-2 text-center text-light">Developer web</h5>
-            <p class="text-light">Hi, I'am Duvan. nice to meet you Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ipsum voluptatum dolor laudantium dicta eius eligendi ut maxime mollitia nobis. Repellat eaque ut, temporibus debitis sequi iste maxime repellendus.</p>
-            
-        <div class="col-lg-3"></div>
+            </div>
+            <h5 class="fs-2 text-center">¿Quién soy yo?</h5>
+            <p class="about">Mi nombre es duvan felipe celiz caro, soy una persona amable, respetuosa, humilde, me gusta trabajar en conjunto y sobre todo muy paciente, desde niño encontré cierta inclinación a la tecnología y cómo funcionaba cada uno de sus partes, luego
+                de culminar mis estudios de secundaria decidí estudiar en la universidad del magdalena donde me gradué como ingeniero electrónico, allí en mis últimos semestres encontré gran pasión por la programación. los microcontroladores, la electrónica
+                análoga, la electrónica digital, la domótica y el concepto internet de las cosas de las cosas(iot). </p>
+
+            <div class="col-lg-3"></div>
+        </div>
     </div>
-</div>
-<div class="row" id="main-row5">
-    
-    <div class="col-lg-3"></div>
-    <div class="col-lg-6 position-relative">
+    <div class="row" id="main-row5">
 
-        <div class="contact">
-            <h5 class="fs-2 text-center text-light">CONTACT</h5>
-            <i class="bi bi-github"></i>
-            <i class="bi bi-linkedin"></i>
-            <p >Hi, I'am Duvan. nice to meei iste maxime repellendus.</p>
-           </div>
-       
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 card" id="contact-col">
+            <h5 class="fs-2 text-center text-light">CONTACTO</h5>
+
+            <div class="container contact">
+                <div class="row text-center">
+                    <div class="col-lg-3">
+                        <i class="bi bi-github me-2"></i>
+                        <span class="text-light">duvan celiz</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <i class="bi bi-linkedin me-2"></i>
+                        <span class="text-light">duvan celiz</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <i class="bi bi-phone me-2"></i>
+                        <span class="text-light">+57 3045644316</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <i class="bi bi-envelope me-2"></i>
+                        <span class="text-light">duvanceliz@gmail.com</span>
+
+                    </div>
+                </div>
+
+                <p class="text-light text-center">::Muchas gracias por tu tiempo de ante mano te envio un fraternal saludo y quedo atento a tu contacto::</p>
+            </div>
+
+        </div>
+        <div class="col-lg-1"></div>
+
     </div>
-    <div class="col-lg-3"></div>
-
-</div>
-
-
 
 </div>
 <div class="container-fluid text-light text-center p-3" id="footer">
