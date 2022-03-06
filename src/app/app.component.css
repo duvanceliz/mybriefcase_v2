@@ -1,7 +1,7 @@
 #header {
     font-size: 1em;
     background: linear-gradient(120deg, rgba(5, 0, 97, 1) 0%, rgba(98, 3, 166, 1) 35%, rgba(46, 0, 194, 1) 100%);
-    min-height: 37.5em;
+    min-height: 39em;
 }
 
 .logo {
@@ -75,6 +75,37 @@
 
 .about {
     text-align: justify;
+}
+
+.mover-right {
+    animation-name: mover-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover-right {
+    0% {
+        transform: translateX(-600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mover-left {
+    animation-name: mover-left;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes mover-left {
+    0% {
+        transform: translateX(600px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 #hamburger button span {

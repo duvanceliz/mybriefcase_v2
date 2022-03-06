@@ -32,7 +32,7 @@
 
             <div class="hamburger">
                 <div id="hamburger">
-                    <button (click)="onClick()">
+                    <button #btnHamburger (click)="onClick()">
                         <span class="top-line"></span>
                         <span class="middle-line"></span>
                         <span class="bottom-line"></span>
@@ -44,7 +44,7 @@
 
         </div>
 
-        <nav>
+        <nav #navbar>
             <a href="#header">INICIO</a>
             <a href="#main-row1">PROYECTOS</a>
             <a href="#main-row4">SOBRE ME</a>
@@ -59,7 +59,7 @@
         <div class="row p-3">
             <div class="col-lg-6">
                 <h5 class="fs-2">Desarrolador web fullstack entusiasta y apasionado</h5>
-                <p class="p-header">Hola, Me llamo duvan. Encantado de conocerte soy desarrollador de aplicaciones web fullstack, me encanta lo que hago y soy muy creativo, siempre estoy a la vanguardia de las nuevas tecnología e innovando cada día.
+                <p class="p-header">Hola, Me llamo Duvan. Encantado de conocerte soy desarrollador de aplicaciones web fullstack, me encanta lo que hago y soy muy creativo, siempre estoy a la vanguardia de las nuevas tecnología e innovando cada día.
                 </p>
                 <a href="#main-row5" class="btn-header">Contactar</a>
             </div>
@@ -92,7 +92,7 @@
         <!-- <h3 class="text-center" style="color:rgb(81, 23, 173);">PROYECTOS</h3> -->
         <div class="col-lg-6 d-flex justify-content-center">
 
-            <img src="assets/img-w.png" alt="" class="img-fluid">
+            <img src="assets/img-w.png" alt="" class="img-fluid" #imgOne>
         </div>
         <div class="col-lg-6 p-2">
 
@@ -119,13 +119,13 @@
         <div class="col-lg-6 d-flex justify-content-center">
 
 
-            <img src="assets/img-ra.png" alt="" class="img-fluid">
+            <img src="assets/img-ra.png" alt="" class="img-fluid" #imgTwo>
         </div>
 
     </div>
     <div class="row p-4 border-bottom border-3" id="main-row3">
         <div class="col-lg-6 d-flex justify-content-center">
-            <img src="assets/img-mini.png" alt="" class="img-fluid">
+            <img src="assets/img-mini.png" alt="" class="img-fluid" #imgThree>
 
         </div>
         <div class="col-lg-6">
@@ -147,7 +147,7 @@
                 <img src="assets/perfil.png" class="rounded-circle" alt="...">
             </div>
             <h5 class="fs-2 text-center" style="color: rgb(81, 23, 173);">¿Quién soy?</h5>
-            <p class="about">Mi nombre es duvan felipe celiz caro, soy una persona amable, respetuosa, humilde, me gusta trabajar en conjunto y sobre todo muy paciente, desde niño encontré cierta inclinación por la tecnología cómo funcionaba cada uno de sus componentes,
+            <p class="about">Mi nombre es Duvan Felipe Celiz Caro, soy una persona amable, respetuosa, humilde, me gusta trabajar en conjunto y sobre todo muy paciente, desde niño encontré cierta inclinación por la tecnología cómo funcionaba cada uno de sus componentes,
                 luego de culminar mis estudios de secundaria decidí estudiar en la <strong>universidad del magdalena</strong> donde me gradué como <strong>ingeniero electrónico</strong> , allí en mis últimos semestres encontré gran pasión por la programación,
                 las aplicaciones web y el mundo de los microcontroladores. </p>
 
