@@ -51,8 +51,10 @@ export class AppComponent implements OnInit{
         const imgThree = this.imgThree.nativeElement;
 
       let windowScrollPos = window.scrollY;
+
+    console.log(imgTwo.offsetTop)
        
-       if(windowScrollPos >imgOne.offsetTop/3){
+       if(windowScrollPos >imgOne.offsetTop/5){
 
         this.renderer2.addClass(imgOne,'mover-right');
 
