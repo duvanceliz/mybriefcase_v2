@@ -77,6 +77,21 @@
     text-align: justify;
 }
 
+.img-w {
+    position: relative;
+    left: -800px;
+}
+
+.img-ra {
+    position: relative;
+    right: -800px;
+}
+
+.img-m {
+    position: relative;
+    left: -800px;
+}
+
 .mover-right {
     animation-name: mover-right;
     animation-duration: 1s;
@@ -86,10 +101,10 @@
 
 @keyframes mover-right {
     0% {
-        transform: translateX(-600px);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(800px);
     }
 }
 
@@ -97,14 +112,15 @@
     animation-name: mover-left;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 @keyframes mover-left {
     0% {
-        transform: translateX(600px);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(-800px);
     }
 }
 
