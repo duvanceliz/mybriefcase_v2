@@ -77,24 +77,21 @@
     text-align: justify;
 }
 
-
-/* .img-w {
+.img-w {
     position: relative;
     left: -800px;
 }
 
 .img-ra {
     position: relative;
-    right: -800px;
+    left: -3000px;
 }
 
 .img-m {
     position: relative;
     left: -800px;
-} */
+}
 
-
-/* 
 .mover-right {
     animation-name: mover-right;
     animation-duration: 1s;
@@ -111,21 +108,22 @@
     }
 }
 
-.mover-left {
-    animation-name: mover-left;
+.mover-right2 {
+    display: flex;
+    animation-name: mover-right2;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes mover-left {
+@keyframes mover-right2 {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-800px);
+        transform: translateX(3000px);
     }
-} */
+}
 
 #hamburger button span {
     font-size: 1em;

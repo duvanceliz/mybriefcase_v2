@@ -7,6 +7,7 @@ import {
   transition,
   // ...
 } from '@angular/animations';
+import { Scroll } from '@angular/router';
 
 
 
@@ -44,25 +45,26 @@ export class AppComponent implements OnInit{
   imgThree!: ElementRef;
 
 
-  @HostListener('window:scroll',[]) 
-  onScroll():void {
+  @HostListener('window:scroll',['$event']) 
+  onScroll($event:Scroll):void {
         const imgOne = this.imgOne.nativeElement;
         const imgTwo = this.imgTwo.nativeElement;
         const imgThree = this.imgThree.nativeElement;
-
-      let windowScrollPos = window.scrollY;
-       console.log(windowScrollPos)
-       if(windowScrollPos >imgOne.offsetTop/5){
+      
+     
+       let windowScrollPos = window.scrollY
+       
+       if(windowScrollPos >imgOne.offsetTop/4){
 
         this.renderer2.addClass(imgOne,'mover-right');
         
        }
 
        if(windowScrollPos > imgTwo.offsetTop/1.5){
-        this.renderer2.addClass(imgTwo,'mover-left');
+        this.renderer2.addClass(imgTwo,'mover-right2');
 
        }
-       if(windowScrollPos > imgThree.offsetTop/1.5){
+       if(windowScrollPos > imgThree.offsetTop/1.2){
       this.renderer2.addClass(imgThree,'mover-right');
 
        }
