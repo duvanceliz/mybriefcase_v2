@@ -1,0 +1,50 @@
+#inUser {
+    border: 1px solid rgba(85, 21, 131, 0.479);
+    border-radius: 4px;
+    /* transition: 0.1s; */
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    background: rgb(8, 1, 26);
+    color: rgb(255, 255, 255);
+}
+
+#inUser:focus {
+    box-shadow: 0 0 0 1px rgba(85, 21, 131, 0.712);
+}
+
+#inPass {
+    border: 1px solid rgba(85, 21, 131, 0.479);
+    border-radius: 4px;
+    /* transition: 0.1s; */
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    background: rgb(8, 1, 26);
+    color: rgb(255, 255, 255);
+}
+
+#inPass:focus {
+    box-shadow: 0 0 0 1px rgba(85, 21, 131, 0.712);
+}
+
+#btnLog {
+    font-size: 1em;
+    border: 1px solid rgb(101, 24, 156);
+    border-radius: 0.1875rem;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    width: 100%;
+    background: rgb(8, 1, 26);
+}
+
+.min-h {
+    background-color: rgb(8, 1, 26);
+    min-height: 100vh
+}
+
+.bg-personal {
+    background-color: rgb(14, 7, 34);
+    border-radius: 4px;
+}

@@ -1,0 +1,668 @@
+#header {
+    font-size: 1em;
+    background: linear-gradient(120deg, rgba(5, 0, 97, 1) 0%, rgba(98, 3, 166, 1) 35%, rgba(46, 0, 194, 1) 100%);
+    min-height: 39em;
+}
+
+.logo {
+    margin-left: .4em;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.navbar a {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#logotipo {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+#footer {
+    background: linear-gradient(90deg, rgba(5, 0, 97, 1) 0%, rgba(98, 3, 166, 1) 35%, rgba(46, 0, 194, 1) 100%);
+}
+
+#main {
+    min-height: calc(100vh - 600px);
+}
+
+.p-header {
+    text-align: justify;
+}
+
+.btn-link {
+    font-size: 1em;
+    text-decoration: none;
+    border: 1px solid rgb(101, 24, 156);
+    padding: 0.625em;
+    color: rgb(101, 24, 156);
+    box-shadow: 1px 1px 10px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+.btn-header {
+    font-size: 1em;
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.625em;
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+}
+
+#contact-col {
+    background: rgb(3, 3, 12);
+}
+
+.about {
+    text-align: justify;
+}
+
+.img-w {
+    position: relative;
+    left: -800px;
+}
+
+.img-ra {
+    position: relative;
+    left: -3000px;
+}
+
+.img-m {
+    position: relative;
+    left: -800px;
+}
+
+.mover-right {
+    animation-name: mover-right;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(800px);
+    }
+}
+
+.mover-right2 {
+    display: flex;
+    animation-name: mover-right2;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover-right2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(3000px);
+    }
+}
+
+#hamburger button span {
+    font-size: 1em;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    display: block;
+    margin-top: 0.3125em;
+    width: 2.5em;
+    height: 0.1875em;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+#hamburger button {
+    font-size: 1em;
+    margin-top: 0.125em;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#hamburger button.open .top-line {
+    animation-name: top-line-animation;
+}
+
+#hamburger button.open .middle-line {
+    animation-name: middle-line-animation;
+}
+
+#hamburger button.open .bottom-line {
+    animation-name: bottom-line-animation;
+}
+
+
+/* ******************************************* */
+
+#hamburger button.close .top-line {
+    animation-name: top-line-animation-close;
+}
+
+#hamburger button.close .middle-line {
+    animation-name: middle-line-animation-close;
+}
+
+#hamburger button.close .bottom-line {
+    animation-name: bottom-line-animation-close;
+}
+
+@keyframes top-line-animation {
+    50%,
+    100% {
+        margin: 0 auto;
+        transform: translateY(3px) rotate(-45deg);
+    }
+}
+
+@keyframes bottom-line-animation {
+    50%,
+    100% {
+        margin: 0 auto;
+        transform: translateY(-3px) rotate(45deg);
+    }
+}
+
+@keyframes middle-line-animation {
+    20%,
+    100% {
+        margin: 0;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+
+/* ................................................... */
+
+@keyframes top-line-animation-close {
+    0% {
+        margin: 0 auto;
+        transform: translateY(3px) rotate(-45deg);
+    }
+    50%,
+    100% {
+        margin: 5px auto;
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes middle-line-animation-close {
+    0% {
+        margin: 0 auto;
+        width: 0;
+        opacity: 0;
+    }
+    20%,
+    100% {
+        margin: 0 auto;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes bottom-line-animation-close {
+    0% {
+        margin: 0 auto;
+        transform: translateY(-3px) rotate(45deg);
+    }
+    50%,
+    100% {
+        margin: 5px auto;
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+nav {
+    height: 0;
+}
+
+
+/*-----------------navbar-open-close..............*/
+
+nav.open {
+    animation-name: navbar-open;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+nav.close {
+    animation-name: navbar-close;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navbar-open {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 130px;
+    }
+}
+
+@keyframes navbar-close {
+    0% {
+        height: 130px;
+    }
+    100% {
+        height: 0;
+    }
+}
+
+
+/*-----------------navbar-open-close..............*/
+
+nav a {
+    display: none;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.274);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+nav.open a {
+    display: flex;
+    justify-content: center;
+    animation-name: font-open;
+    animation-duration: 1s;
+}
+
+@keyframes font-open {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+}
+
+.java {
+    animation-name: java;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes java {
+    0% {
+        transform: translateX(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateX(200px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.python {
+    animation-name: python;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes python {
+    0% {
+        transform: translateX(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateY(-100px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.javas {
+    animation-name: javas;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes javas {
+    0% {
+        transform: translateY(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateY(200px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.type {
+    animation-name: type;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes type {
+    0% {
+        transform: translateX(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateX(-200px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.angular {
+    animation-name: angular;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes angular {
+    0% {
+        transform: translateX(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateX(-200px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.spring {
+    animation-name: spring;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes spring {
+    0% {
+        transform: translateX(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateX(200px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.flask {
+    animation-name: flask;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flask {
+    0% {
+        transform: translateY(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateY(-200px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.mysql {
+    animation-name: mysql;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mysql {
+    0% {
+        transform: translateX(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateX(-200px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.boot {
+    animation-name: boot;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes boot {
+    0% {
+        transform: translateX(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateX(-200px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.aws {
+    animation-name: aws;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes aws {
+    0% {
+        transform: translateY(0) rotateX(0) rotate(0);
+    }
+    100% {
+        transform: translateY(50px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+#main-row1 {
+    background: rgb(255, 255, 255);
+}
+
+#main-row2 {
+    background: rgb(255, 255, 255);
+}
+
+#main-row3 {
+    background: rgb(255, 255, 255);
+}
+
+#main-row4 {
+    background: rgb(255, 255, 255);
+}
+
+#main-row5 {
+    background: rgb(255, 255, 255);
+}
+
+i {
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+@media(max-width:600px) {
+    .java {
+        animation-name: java;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes java {
+        0% {
+            transform: translateX(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateX(50px) rotateX(360deg) rotate(360deg);
+        }
+    }
+    .spring {
+        animation-name: spring;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes spring {
+        0% {
+            transform: translateX(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateX(100px) rotateX(360deg) rotate(360deg);
+        }
+    }
+    .type {
+        animation-name: type;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes type {
+        0% {
+            transform: translateX(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateX(-100px) rotateX(360deg) rotate(360deg);
+        }
+    }
+    .boot {
+        animation-name: boot;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes boot {
+        0% {
+            transform: translateX(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateX(-100px) rotateX(360deg) rotate(360deg);
+        }
+    }
+    .mysql {
+        animation-name: mysql;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes mysql {
+        0% {
+            transform: translateX(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateX(100px) rotateX(360deg) rotate(360deg);
+        }
+    }
+    .angular {
+        animation-name: angular;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes angular {
+        0% {
+            transform: translateX(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateX(-100px) rotateX(360deg) rotate(360deg);
+        }
+    }
+    .aws {
+        animation-name: aws;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes aws {
+        0% {
+            transform: translateY(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateY(50px) rotateX(360deg) rotate(360deg);
+        }
+    }
+    .flask {
+        animation-name: flask;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes flask {
+        0% {
+            transform: translateY(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateY(-100px) rotateX(360deg) rotate(360deg);
+        }
+    }
+    .python {
+        animation-name: python;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes python {
+        0% {
+            transform: translateX(0) rotateX(0) rotate(0);
+        }
+        100% {
+            transform: translateY(-20px) rotateX(360deg) rotate(360deg);
+        }
+    }
+}
+
+#device-sm {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:1200px) {
+    #device-lg {
+        display: none;
+    }
+}
+
+@media(min-width:1200px) {
+    #device-sm {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+}

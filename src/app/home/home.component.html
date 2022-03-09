@@ -1,0 +1,203 @@
+<div class="container-fluid" id="header">
+    <div class="container">
+        <div class="row p-3" id="device-lg">
+
+            <div class="col-md-5 d-flex">
+                <i class="bi bi-file-earmark-code" id="logotipo"></i>
+                <div class="logo">DUVANCELIZ</div>
+
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="navbar">
+                    <a href="#header">INICIO</a>
+                    <a href="#main-row1">PROYECTOS</a>
+                    <a href="#main-row4">SOBRE MI</a>
+                    <a href="#main-row5">CONTACTO</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div id="device-sm">
+
+            <div class="container-log d-flex">
+                <i class="bi bi-file-earmark-code" id="logotipo"></i>
+                <div class="logo">DUVANCELIZ</div>
+            </div>
+
+            <div class="hamburger">
+                <div id="hamburger">
+                    <button #btnHamburger (click)="onClick()">
+                        <span class="top-line"></span>
+                        <span class="middle-line"></span>
+                        <span class="bottom-line"></span>
+                    </button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <nav #navbar>
+            <a href="#header">INICIO</a>
+            <a href="#main-row1">PROYECTOS</a>
+            <a href="#main-row4">SOBRE MI</a>
+            <a href="#main-row5">CONTACTO</a>
+
+        </nav>
+
+
+    </div>
+
+    <div class="container text-light mt-5">
+        <div class="row p-3">
+            <div class="col-lg-6">
+                <h5 class="fs-2">Desarrolador web fullstack entusiasta y apasionado</h5>
+                <p class="p-header">Hola, Me llamo Duvan. Encantado de conocerte soy desarrollador de aplicaciones web fullstack, me encanta lo que hago y soy muy creativo, siempre estoy a la vanguardia de las nuevas tecnología e innovando cada día.
+                </p>
+                <a href="#main-row5" class="btn-header">Contactar</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="items">
+                    <div class="java">JAVA</div>
+                    <div class="python">PYTHON</div>
+                    <div class="javas">JAVASCRIPT</div>
+                    <div class="type">TYPESCRIPT</div>
+                    <div class="angular">ANGULAR</div>
+                    <div class="spring">SPRING BOOT</div>
+                    <div class="flask">FLASK</div>
+                    <div class="mysql">MYSQL</div>
+                    <div class="boot">BOOTSTRAP 5</div>
+                    <div class="aws">AWS</div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="container-fluid" id="main">
+
+    <div class="row p-4 border-bottom border-3" id="main-row1">
+        <!-- <h3 class="text-center" style="color:rgb(81, 23, 173);">PROYECTOS</h3> -->
+        <div class="col-lg-6 d-flex justify-content-center">
+
+            <img src="assets/img-w.png" alt="" class="img-fluid img-w" #imgOne>
+
+        </div>
+        <div class="col-lg-6 p-2">
+
+            <h5 class="fs-2" style="color: rgb(81, 23, 173);">App Weather</h5>
+            <p style="text-align: justify;">weather es una aplicación web desarrollada para monitoriar datos del clima, utilizando microcontroladores y sensores, la app se desarrolló con el framework de
+                <strong>Flask</strong> para Python, <strong>Chart.js</strong> para graficar los datos en tiempo real. para el alojamiento de los datos se utilizó
+                <strong>Mariadb</strong>, <strong>bootstrap 5 </strong> para los estilos y el diseño responsive, y por ultimo el despliegue se realizó en los servicios de <strong>aws</strong> .
+            </p>
+
+            <a href="https://github.com/duvanceliz/weather-v1.0" target="_blank" class="btn-link"><i class="bi bi-github me-2 fs-6" style="color: rgb(81, 23, 173);"></i>Ver proyecto</a>
+
+        </div>
+    </div>
+    <div class="row p-4 border-bottom border-3" id="main-row2">
+        <div class="col-lg-6 mb-3">
+
+            <h5 class="fs-2" style="color: rgb(81, 23, 173);">App Rome & Andy</h5>
+            <p style="text-align: justify;">Esta es una app desarrollada para artistas de música urbana, la aplicación tiene como propósito ampliar el reconocimiento de estos artistas a nivel nacional e internacional, la aplicación tiene el frontend separado del backend, para el frontend
+                se utilizó el framework de <strong>Angular</strong> y el backend es una <strong>API REST</strong> diseñada con <strong>Spring Boot</strong> , <strong>Bootstrap 5</strong> para los estilos y diseño responsive, y <strong>MYSQL</strong> para
+                el alojamiento de los datos. </p>
+            <a href="https://github.com/duvanceliz/frontend-app-romeyandy" target="_blank" class="btn-link me-2"><i class="bi bi-github me-2 fs-6" style="color: rgb(81, 23, 173);"></i>Ver proyecto</a>
+            <a href="http://felibucket.s3-website-sa-east-1.amazonaws.com/" target="_blank" class="btn-link"><i class="bi bi-filetype-html me-2 fs-6" style="color: rgb(81, 23, 173);"></i>Deployment</a>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-center">
+
+
+            <img src="assets/img-ra.png" alt="" class="img-fluid img-ra" #imgTwo>
+        </div>
+
+    </div>
+    <div class="row p-4 border-bottom border-3" id="main-row3">
+        <div class="col-lg-6 d-flex justify-content-center">
+            <img src="assets/img-mini.png" alt="" class="img-fluid img-m" #imgThree>
+
+        </div>
+        <div class="col-lg-6">
+
+            <h5 class="fs-2" style="color: rgb(81, 23, 173);">App MiniColeStore</h5>
+            <p style="text-align: justify;">Esta aplicación está en proceso de elaboración para una tienda de detalles, manualidades y decoraciones, el propósito de esta app es el comercio en línea (e-commmerce), la tecnología utilizada para su elaboración es el framework de <strong>Spring
+                    Boot, Mariadb, Bootstrap 5</strong> .
+            </p>
+            <a href="https://github.com/duvanceliz/minicolestore" target="_blank" class="btn-link"><i class="bi bi-github me-2 fs-6" style="color: rgb(81, 23, 173);"></i>Ver proyecto</a>
+        </div>
+
+    </div>
+
+    <div class="row p-4 border-bottom border-3" id="main-row4">
+
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <div class="text-center">
+                <img src="assets/perfil.png" class="rounded-circle" alt="...">
+            </div>
+            <h5 class="fs-2 text-center" style="color: rgb(81, 23, 173);">¿Quién soy?</h5>
+            <p class="about">Mi nombre es Duvan Felipe Celiz Caro, soy una persona amable, respetuosa, humilde, me gusta trabajar en conjunto y sobre todo muy paciente, desde niño encontré cierta inclinación por el funcionamiento interno de los dispositivos electronicos,
+                luego de culminar mis estudios de secundaria decidí estudiar en la <strong>universidad del magdalena</strong> donde me gradué como <strong>ingeniero electrónico</strong> , allí en mis últimos semestres encontré gran pasión por la programación,
+                las aplicaciones web y el mundo de los microcontroladores. </p>
+
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+    <div class="row p-4">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 border border-1 p-4">
+            <app-form-contact></app-form-contact>
+
+        </div>
+        <div class="col-lg-3"></div>
+
+    </div>
+    <div class="row" id="main-row5">
+
+
+        <div class="colcard" id="contact-col">
+
+            <div class="container contact">
+                <div class="row text-center">
+                    <div class="col-lg-3 d-flex align-items-center">
+                        <i class="bi bi-github me-2 "></i>
+                        <span class="text-light">duvan celiz</span>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-center">
+                        <i class="bi bi-linkedin me-2 "></i>
+                        <span class="text-light">duvan celiz</span>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-center">
+                        <i class="bi bi-phone me-2 "></i>
+                        <span class="text-light">+57 3045644316</span>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-center">
+                        <i class="bi bi-envelope me-2"></i>
+                        <span class="text-light">duvanceliz@gmail.com</span>
+
+                    </div>
+                </div>
+
+                <p class="text-light text-center">::Muchas gracias por tu tiempo de ante mano te envio un fraternal saludo y quedo atento a tu contacto::</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="container-fluid text-light text-center p-3" id="footer">
+    © 2022 DuvanCeliz. All Rights Reserved.
+</div>
