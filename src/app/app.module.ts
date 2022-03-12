@@ -12,7 +12,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpServiceService } from './http-service.service';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClientModule} from '@angular/common/http';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgxCaptchaModule } from 'ngx-captcha';
 
 const routes:Routes=[
   {path:'',component:HomeComponent},
@@ -30,7 +31,13 @@ const routes:Routes=[
     DashboardComponent
   ],
   imports: [
-    BrowserModule,RouterModule.forRoot(routes),BrowserAnimationsModule,FormsModule,HttpClientModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    NgxCaptchaModule
   ],
   providers: [HttpServiceService,CookieService],
   bootstrap: [AppComponent]

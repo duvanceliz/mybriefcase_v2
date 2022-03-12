@@ -1,29 +1,33 @@
 <div class="container-fluid min-h">
 
-    <div class="row">
+    <div class="container">
 
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4 p-4 bg-personal mt-5">
-            <div class="alert alert-danger" role="alert" *ngIf="error">
-                Failed to login
-            </div>
-            <h4 class="text-center text-light">Sign in to DuvanCeliz</h4>
-            <div class="mb-3">
-                <label for="inUser" class="text-light">Username</label>
-                <input type="text" id="inUser" [(ngModel)]="username" name="username">
-            </div>
-            <div class="mb-3">
-                <label for="inPass" class="text-light">Password</label>
-                <input type="text" id="inPass" [(ngModel)]="password" name="password">
-            </div>
-            <div class="text-center" *ngIf="loading">
-                <div class="spinner-grow text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
+        <div class="row">
+
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 p-4 bg-personal mt-5">
+                <div class="alert alert-danger" role="alert" *ngIf="error">
+                    {{error}}
                 </div>
+                <h4 class="text-center text-light">Sign in to DuvanCeliz</h4>
+                <div class="mb-3">
+                    <label for="inUser" class="text-light">Username</label>
+                    <input type="text" id="inUser" [(ngModel)]="username" name="username">
+                </div>
+                <div class="mb-3">
+                    <label for="inPass" class="text-light">Password</label>
+                    <input type="password" id="inPass" [(ngModel)]="password" name="password">
+                </div>
+                <div class="text-center" *ngIf="loading">
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+                <button id="btnLog" (click)="login()">Sign in</button>
             </div>
-            <button id="btnLog" (click)="login()">Sign in</button>
-        </div>
-        <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
 
+        </div>
     </div>
+
 </div>

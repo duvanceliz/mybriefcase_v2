@@ -1,6 +1,20 @@
+<div class="mb-2">
+    Hola puedes enviarme un correo y te responderé en breve.
+</div>
+
+<div class="alert alert-danger" role="alert" *ngIf="error">
+    {{error}}
+</div>
+<div class="alert alert-success" role="alert" *ngIf="exito">
+    {{exito}}
+</div>
+<div class="mb-3">
+    <input type="text" placeholder="Nombre" id="in_two" [(ngModel)]="name" name="name">
+    <input type="text" placeholder="Apellido" id="in_two" [(ngModel)]="last" name="last">
+</div>
 <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">De:</label>
-    <input type="email" placeholder="nombre@ejemplo.com" id="in">
+    <input type="email" placeholder="nombre@ejemplo.com" id="in" [(ngModel)]="email" name="email">
 </div>
 <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Para:</label>
@@ -8,7 +22,16 @@
 </div>
 <div class="mb-3">
     <label for="exampleFormControlTextarea1" class="form-label">¿En que te puedo ayudar?</label>
-    <textarea name="" id="textarea" cols="30" rows="4"></textarea>
+    <textarea name="" id="textarea" cols="30" rows="4" [(ngModel)]="content" name="content"></textarea>
 </div>
 
-<button id="btnForm" (click)="sendEmail()">Enviar</button>
+<form [formGroup]="aFormGroup">
+    <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" formControlName="recaptcha" (success)="handleSuccess()">
+    </ngx-recaptcha2>
+</form>
+
+<button id="btnForm" (click)="sendEmail()">
+    <div class="spinner-grow spinner-grow-sm" role="status" *ngIf="loading">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    Enviar</button>
