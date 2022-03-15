@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpLoginService } from '../http-login.service';
+import { TokenNameService } from '../token-name.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import { HttpLoginService } from '../http-login.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router:Router, private loginservice:HttpLoginService) { }
+  constructor(private router:Router, private loginservice:HttpLoginService, private cookie:CookieService, private tokenNameService:TokenNameService) { }
 
   username:string='';
   password:string='';
@@ -25,7 +26,7 @@ export class LoginComponent implements OnInit {
     this.loading = true;
     const user = {username:this.username,password:this.password}
     this.loginservice.login(user).subscribe(data=>{
-      this.loginservice.setToken(data.body.dataToken);
+      this.cookie.set('dz7dp4wdPM',data.body.dataToken);
       this.router.navigateByUrl('/dashboard');
       this.loading = false;
     }, error =>{
@@ -36,5 +37,7 @@ export class LoginComponent implements OnInit {
    
 
   }
+
+
 
 }

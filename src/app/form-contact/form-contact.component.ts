@@ -46,7 +46,7 @@ export class FormContactComponent implements OnInit {
     
 
 
-    if((this.name && this.last && this.email && this.content)!=''){
+    if(/*(this.name && this.last && this.email && this.content)!=''*/true){
       
     
     if(this.valCap){
@@ -62,8 +62,11 @@ export class FormContactComponent implements OnInit {
       this.http.setComent(this.contact).subscribe(data =>{  
         this.exito = 'Su mensaje ha sido entregado con éxito. Gracias'
         this.loading = false;
-      },error=>{
-        this.error = error.message;
+      },response=>{
+
+        this.exito = "";
+        this.error = response.error.message;
+        this.loading = false;
       });
 
     }else{

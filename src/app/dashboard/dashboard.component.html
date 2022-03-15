@@ -1,7 +1,9 @@
 <div class="container-fluid bg-personal">
     <div class="row">
         <h4 class="text-light text-center">Dashboard</h4>
-        <div class="col-lg-3 text-light">Hello!! God bless you {{username}}</div>
+        <div class="col-lg-3 text-light">Hello!! God bless you {{username}}
+            <div class="text-uppercase">page views:{{views}}</div>
+        </div>
         <div class="col-lg-6 table-responsive">
             <div class="spinner-grow text-primary" role="status" *ngIf="loading">
                 <span class="visually-hidden">Loading...</span>
@@ -23,6 +25,13 @@
                         <td>{{contact.last}}</td>
                         <td>{{contact.email}}</td>
                         <td>{{contact.content}}</td>
+                        <td>
+                            <button class="btn btn-danger" (click)="_delete(contact)">
+                                <div class="spinner-grow spinner-grow-sm" role="status" *ngIf="loadingDel">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              Delete</button>
+                        </td>
                     </tr>
 
                 </tbody>
