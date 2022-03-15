@@ -8,6 +8,8 @@ import {
   // ...
 } from '@angular/animations';
 import { Scroll } from '@angular/router';
+import { HttpServiceService } from '../http-service.service';
+import { Views } from '../Models/Views';
 
 @Component({
   selector: 'app-home',
@@ -19,9 +21,10 @@ import { Scroll } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private renderer2: Renderer2){}
+  constructor(private renderer2: Renderer2, private http:HttpServiceService){}
 
   i:boolean = true;
+  views:Views = new Views();
 
   @ViewChild('btnHamburger')
   btnHamburger!: ElementRef;
@@ -67,6 +70,11 @@ export class HomeComponent implements OnInit {
 
   
   ngOnInit(): void {
+
+    this.views.views = 1;
+    this.http.viewsSave(this.views).subscribe(data =>{
+     
+   });
     
    
   }
